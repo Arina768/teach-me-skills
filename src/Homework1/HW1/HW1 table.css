@@ -1,0 +1,7 @@
+ul {
+  color:blue;
+}
+tr td:last-child {
+  color: gold;
+}
+
