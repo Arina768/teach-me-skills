@@ -1,0 +1,32 @@
+.head, .row {
+    display: flex;
+    flex-direction: row;
+
+}
+.hblock,.hblock2 {
+    width: 200px;
+    border: 2px double black;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+.block1,.block11,.block2   {
+    width: 200px;
+    border: 2px double black;
+    padding: 2px;
+}
+.block11 {
+    width: 408px;
+    color: red;
+}
+.hblock2,.block2 {
+    width: 100px;}
+.center {
+    text-align: center;
+}
+ul {
+    color: blue;
+}
+.gold {
+    color: gold;
+}
