@@ -1,0 +1,227 @@
+.head {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.head1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+}
+.inst {
+    width: 20%;
+    text-align: center;
+}
+.head2,.head4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 2px;
+
+}
+.head21,.head22,.head23 {
+    width: 20%;
+}
+ .head41 {
+    width: 30%;
+}
+.head21{
+    display: grid;
+    grid-template-areas:
+"phone need need need need need need"
+"phone number number number number number number";
+}
+.phone {
+    grid-area: phone;
+}
+.phone1 {
+    width: 40px;
+    height: 40px;
+}
+.need {
+    grid-area: need;
+    color: dimgray;
+}
+.number {
+    grid-area: number;
+}
+.head22 {
+    font-size: 43px;
+    text-align: center;
+}
+input {
+    border: 2px solid gray;
+    height: 35px;
+    width: 200px;
+    border-radius: 12px;
+    outline: none;
+    margin: 4px;
+}
+.head3 {
+    display: grid;
+    grid-template-columns:repeat(10,1fr) 2fr;
+    grid-template-rows: 50px;
+    grid-gap: 2px;
+    background-color: white;
+    margin-bottom: 2px;
+}
+.menu {
+  display: flex;
+    align-items: center;
+}
+.imgcart {
+    width: 50px;
+    height: 35px;
+}
+.cart, .head41 {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+.img41 {
+    width: 40px;
+    height: 35px;
+}
+.img42 {
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+}
+.body1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows:1fr;
+    grid-gap: 4px;
+    height: 610px;
+
+    padding: 4px;
+}
+.body11 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-gap: 4px;
+}
+.left1,.left2,.left3 {
+    padding: 20px;
+    line-height: 10px;
+    background-color: white;
+}
+.text {
+    font-size: 25px;
+    font-weight: bold;
+}
+.flowers {
+    height: 610px;
+    width: 100%;
+}
+.body12 {
+    height: 610px;
+}
+.body2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 70px;
+}
+.body21 {
+    width: 20%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.body3 {
+    display: flex;
+    flex-direction: column;
+}
+.name,.price, .image {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 50px;
+    grid-gap: 2px;
+    height: 20px;
+    text-align: center;
+}
+.image {
+    height: 200px;
+    padding: 10px 0 10px 0;
+}
+.flowersprice {
+    height: 200px;
+    width: 200px;
+}
+.price1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    height: 20px;
+    border-radius: 12px;
+margin-left: 10px;
+    outline: none;
+}
+.foot1 {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+   padding: 30px 0 30px 0;
+    background-color: #e6ead8;
+}
+.foot11{
+    margin: 15px;
+    width: 25%;
+    font-size: 15px;
+}
+.foothead {
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+.join {
+    height: 37px;
+    width: 203px;
+    border-radius: 12px;
+background-color: darkgreen;
+    color: white;
+    margin: 4px ;
+}
+.foot2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+.foot21 {
+    width: 20%;
+    text-align: center;
+    color: gray;
+}
+.pay {
+    height: 40px;
+    width: 240px;
+}
+.logo {
+    height: 50px;
+    width: 80px;
+}
