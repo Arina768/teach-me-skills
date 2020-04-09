@@ -1,47 +1,58 @@
-.head {
+html {
+    width: 100%;
+}
+body {
+    margin:0;
+    width: 100%;
+}
+header {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
 }
-.body {
+main {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    padding-bottom: 30px;
+    padding: 0 100px 50px 100px;
 }
-.foot {
-    display: flex;
-    flex-direction: column;
+footer {
+    width: 100%;
 }
-
-.head1 {
+.log,.headline {
+    padding: 0 100px 0 100px;
+    background-color: white;
+}
+.log {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     height: 40px;
-    background-color: white;
 }
-.inst {
-    width: 20%;
-    text-align: center;
+.login,.register {
+    width: 5%;
+    border: none;
+    margin-left: 0;
 }
-.head2,.head4 {
+.register:hover {
+    color: #b596ff;
+}
+.login:hover {
+    color: #b596ff;
+}
+.login {
+    border-right: 1px solid grey;
+    padding-right: 4px;
+    border-radius: 0;
+}
+.headline,.pros {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     height: 50px;
-    background-color: white;
     margin-bottom: 2px;
-
 }
-.head21,.head22,.head23 {
+.contact{
     width: 20%;
-}
- .head41 {
-    width: 30%;
-}
-.head21{
     display: grid;
     grid-template-areas:
 "phone need need need need need need"
@@ -50,7 +61,7 @@
 .phone {
     grid-area: phone;
 }
-.phone1 {
+.phoneimg {
     width: 40px;
     height: 40px;
 }
@@ -61,9 +72,8 @@
 .number {
     grid-area: number;
 }
-.head22 {
-    font-size: 43px;
-    text-align: center;
+h1 {
+    align-self: center;
 }
 input {
     border: 2px solid gray;
@@ -73,104 +83,149 @@ input {
     outline: none;
     margin: 4px;
 }
-.head3 {
-    display: grid;
-    grid-template-columns:repeat(10,1fr) 2fr;
-    grid-template-rows: 50px;
-    grid-gap: 2px;
-    background-color: white;
+nav {
+    display: flex;
+    height: 50px;
     margin-bottom: 2px;
+    padding: 0 100px 0 100px;
+    background-color: white;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    width:1000px;
 }
 .menu {
-  display: flex;
-    align-items: center;
+padding-right: 10px;
+    padding-left: 0;
 }
 .imgcart {
     width: 50px;
     height: 35px;
 }
-.cart, .head41 {
+.cart {
      display: flex;
-     flex-direction: row;
      align-items: center;
+    width: 150px;
+   justify-content: flex-end;
  }
-.img41 {
+.pros {
+    padding: 0 0 0 100px;
+    background-color: white;
+}
+ .container {
+    display: flex;
+    align-items: center;
+     width: 30%;
+}
+.img41, .img42 {
     width: 40px;
     height: 35px;
 }
 .img42 {
-    width: 40px;
-    height: 35px;
     margin-right: 10px;
 }
 .body1 {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows:1fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(6,1fr);
     grid-gap: 4px;
     height: 610px;
-
     padding: 4px;
 }
-.body11 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:1fr 1fr 1fr;
-    grid-gap: 4px;
-}
-.left1,.left2,.left3 {
+.left1 {
+    grid-column: 1/2;
+    grid-row:1/3;
     padding: 20px;
     line-height: 10px;
     background-color: white;
 }
-.text {
-    font-size: 25px;
+.left2 {
+    grid-column: 1/2;
+    grid-row:3/5;
+    padding: 20px;
+    line-height: 10px;
+    background-color: white;
+}
+.left3 {
+    grid-column: 1/2;
+    grid-row:5/7;
+    padding: 20px;
+    line-height: 10px;
+    background-color: white;
+}
+.pic {
+    grid-column: 2/5;
+    grid-row:1/7;
+    position: relative;
+}
+.order {
+    position: absolute;
+    top:200px;
+    left: 300px;
+    text-align: center;
     font-weight: bold;
+}
+.orderflowers {
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.shop {
+    height: 30px;
+    border-radius: 25px;
+    outline: none;
+    width: 150px;
+}
+.arrow {
+    width: 35px;
+    height: 35px;
 }
 .flowers {
     height: 610px;
     width: 100%;
 }
-.body12 {
-    height: 610px;
+h3 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #606060;
+    padding-top: 20px;
 }
 .body2 {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 70px;
+    overflow-x: auto;
+    height: 350px;
 }
-.body21 {
-    width: 20%;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.body2::-webkit-scrollbar{
+    height: 10px;
 }
-.body3 {
+.body2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  box-shadow: inset 0 0 4px #bdc1b0;
+    background-color: whitesmoke;
+}
+.block {
     display: flex;
     flex-direction: column;
-}
-.name,.price, .image {
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 50px;
-    grid-gap: 2px;
-    height: 20px;
     text-align: center;
+    margin:0 10px 0 10px ;
 }
-.image {
-    height: 200px;
-    padding: 10px 0 10px 0;
+h4 {
+    font-weight: normal;
+    font-size: 15px;
+    color: #4d4d4d;
 }
 .flowersprice {
-    height: 200px;
+    height: 230px;
     width: 200px;
+    padding-bottom: 10px;
 }
-.price1 {
+.price {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    height: 20px;
 }
 button {
     background-color: white;
@@ -181,39 +236,46 @@ button {
 margin-left: 10px;
     outline: none;
 }
+.foot {
+    background-color: #e6ead8;
+    padding: 0 100px 0 100px;
+}
 .foot1 {
     display: flex;
-    flex-direction: row;
     height: 400px;
    padding: 30px 0 30px 0;
-    background-color: #e6ead8;
 }
-.foot11{
-    margin: 15px;
-    width: 25%;
+.information{
+    width: 200px;
     font-size: 15px;
+    margin: 10px;
 }
 .foothead {
     font-weight: bold;
     padding-bottom: 7px;
+    margin-top: 10px;
+}
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
 }
 .join {
     height: 37px;
     width: 203px;
     border-radius: 12px;
-background-color: darkgreen;
+    background-color: darkgreen;
     color: white;
     margin: 4px ;
 }
 .foot2 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 55px;
+    padding: 0 100px 0 100px;
 }
-.foot21 {
-    width: 20%;
+.copyright {
+    width: 200px;
     text-align: center;
     color: gray;
 }
@@ -224,4 +286,5 @@ background-color: darkgreen;
 .logo {
     height: 50px;
     width: 80px;
+    padding-left: 50px;
 }
