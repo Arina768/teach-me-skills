@@ -1,7 +1,5 @@
 .head{
     display: flex;
-    flex-direction: row;
-justify-content: space-between;
 }
 .block1 {
     background:cornflowerblue;
@@ -11,15 +9,13 @@ justify-content: space-between;
 }
 .body {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 1px;
 }
 .container1 {
-    display: flex;
-    flex-direction: column;
     width: 20%;
    padding-right: 1%;
+    overflow: auto;
+    height: 400px;
 }
 .container2 {
  width:36%;
@@ -43,8 +39,8 @@ justify-content: space-between;
 }
 .container21,.container22 {
     display: flex;
-flex-direction: row;
-    justify-content: space-between;
+    overflow: auto;
+    flex-shrink: 0;
 }
 .container22 {
     margin-top: 10px;
@@ -54,25 +50,33 @@ flex-direction: row;
     flex-grow: 1;
     height: 150px;
     margin: 1px;
+    width: 150px;
+    flex-shrink: 0;
 }
 .block22 {
     background: yellow;
     flex-grow: 1;
     height: 200px;
     margin: 1px;
+    width: 200px;
+    flex-shrink: 0;
 }
 .container31,.container32,.container33 {
     display: flex;
-    flex-direction: row;
     margin-top: 10px;
-}
-.container31,.container32 {
+    overflow: auto;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
 }
+
 .block31, .block32, .block33 {
     background: turquoise;
     width: 50%;
     height: 103px;
     margin: 2px;
+    flex-shrink: 0;
+}
+.container3 {
+    overflow: auto;
+    height: 400px;
 }
