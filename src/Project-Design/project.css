@@ -21,12 +21,9 @@ p{
 }
 .logo {
     height: 30px;
-
 }
 nav ul {
     display: flex;
-    /*font-weight: bold;*/
-
     font-size: 15px;
     list-style-type: none;
 }
